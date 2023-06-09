@@ -4,7 +4,7 @@ import pygame
 pygame.init()
 windowX = 500
 windowY = 500
-delay = 120
+delay = 100
 dis = pygame.display.set_mode((windowX, windowY))
 pygame.display.set_caption('Змейка')
 
@@ -37,6 +37,7 @@ gray = (50, 50, 50)
 
 
 def grid():
+    
     for i in range(0, windowX, sizeX):
         pygame.draw.aaline(dis, gray, [i, 0], [i, windowY])
     for j in range(0, windowY, sizeY):

@@ -21,7 +21,7 @@ class Snake:
     def block_move(self):
         self.x += self.movex
         self.y += self.movey
-        self.colour = (choice(range(255)), choice(range(255)), choice(range(255)))
+        #self.colour = (choice(range(255)), choice(range(255)), choice(range(255)))
         # if self.x > windowX - sizeX or self.y > windowY - sizeY or self.x < 0 or self.y < 0: #конец поля
         #     self.game_over() # удар о стенки
 

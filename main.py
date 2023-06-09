@@ -4,7 +4,7 @@ from settings import *
 
 player = Snake()
 food = Apple()
-ng_batton = Button(450, 300, 35, 10, 'New Game')
+#ng_batton = Button(450, 300, 35, 10, 'New Game')
 
 
 gamePause = False
@@ -57,7 +57,6 @@ while runGame:
             if[food.x + sizeX//2, food.y + sizeY//2] in player.body:
                 while [food.x + sizeX//2, food.y + sizeY//2] in player.body:
                     food.death()
-                    print(3482093482)
             player.addBlock()
 
         pygame.display.update()
